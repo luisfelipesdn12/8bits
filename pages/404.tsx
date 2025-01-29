@@ -28,3 +28,12 @@ export default function Home() {
         </Layout>
     );
 }
+
+export const getStaticProps = async (context) => {
+    return {
+        redirect: {
+            destination: 'https://luisf.dev',
+            permanent: false,
+        },
+    };
+};
